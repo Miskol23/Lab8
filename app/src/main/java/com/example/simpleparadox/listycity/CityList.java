@@ -22,6 +22,13 @@ public class CityList {
         cities.add(city);
     }
 
+    public void addgibberish(City city) {
+        if (hasCity(city)) {
+            throw new IllegalArgumentException();
+        }
+        cities.add(city);
+    }
+
     /**
      * This returns a sorted list of cities
      * @return
