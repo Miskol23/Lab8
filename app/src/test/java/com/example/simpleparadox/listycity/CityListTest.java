@@ -93,13 +93,5 @@ class CityListTest {
 
         assertEquals(1, cityList.countCities());
     }
-    @Test
-    void testaddgibberish() {
-        CityList cityList =     mockCityList();
-        City city = new City("Victoria", "British Columbia");
-        cityList.addgibberish(city);
 
-        assertEquals(2, cityList.countCities());
-
-    }
 }
